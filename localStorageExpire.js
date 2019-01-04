@@ -1,11 +1,3 @@
-# localStorage Expire
-
-> localStorage 设置过期时间
-
-```js
-/**
- * [以秒做单位, 设置localStorage过期时间]
- */
 const localStorageUtil = {
     set(key, val, expire){
       var exp = expire ? Date.now() + expire*1000 : -1;
@@ -31,4 +23,4 @@ const localStorageUtil = {
     }
 }
 
-```
+module.exports = localStorageUtil;
